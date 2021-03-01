@@ -1,0 +1,14 @@
+apply plugin: 'java'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //要处理的注解
+    implementation project(path: ':annotation')
+    compile 'com.google.auto.service:auto-service:1.0-rc3'
+    annotationProcessor 'com.google.auto.service:auto-service:1.0-rc3'
+    //这块在gradle3.4之后有这个坑，必须加上annotationProcessor，不然生不成注解文件
+    compile 'com.squareup:javapoet:1.8.0'
+}
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8

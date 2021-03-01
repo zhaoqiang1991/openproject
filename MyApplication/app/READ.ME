@@ -1,0 +1,16 @@
+##serviceloader开发规范
+1.所有和serviceloader的模块必须最后都要加载壳子上面，不然最终会找不到类
+2.所有的模块只要使用了serviceloader（实现模块）必须要在模块里面增加apply plugin: "serviceloader"声明
+和(1)//服务发现框架
+  implementation project(path: ':annotation')
+  (2)//注解解释器的依赖必须是这样子写，不然有问题
+  annotationProcessor project(path: ':processsor')
+ （3)桥梁
+   implementation project(path: ':serviceloader')
+
+这些, 不然会有问题
+3.壳子上面的依赖例子：
+implementation project(":login_module_api")
+implementation project(":login_module")
+implementation project(":home_module_api")
+implementation project(":home_module")

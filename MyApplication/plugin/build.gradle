@@ -1,0 +1,39 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+dependencies {
+    //使用gradle api
+    compile gradleApi()
+    //使用groovy语言
+    compile localGroovy()
+    // Javassist
+    compile 'org.javassist:javassist:3.21.0-GA'
+    //gradle的transform操作
+    //implementation 'com.android.tools.build:gradle:3.5.3'
+    compile 'com.android.tools.build:gradle:3.1.1'
+    //compile 'com.android.tools.build:gradle:2.3.1'
+    //commons-io
+    implementation 'commons-io:commons-io:2.6'
+}
+
+repositories {
+    mavenCentral()
+}
+
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            //本地的Maven地址
+            //repository(url: '../my')
+            // 本地仓库路径
+            repository(url:"file:////Users/lh/.m2/repository")
+            // 唯一标识
+            pom.groupId = "com.example.serviceloader"
+            // 项目名称
+            pom.artifactId = "plugin"
+            // 版本号
+            pom.version = "1.0.0"
+        }
+    }
+}

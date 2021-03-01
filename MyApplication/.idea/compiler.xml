@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.auto.service/auto-service/1.0-rc3/35c5d43b0332b8f94d473f9fee5fb1d74b5e0056/auto-service-1.0-rc3.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.auto/auto-common/0.3/4073ab16ab4aceb9a217273da6442166bf51ae16/auto-common-0.3.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/19.0/6ce200f6b23222af3d8abb6b6459e6c44f4bb0e9/guava-19.0.jar" />
+        </processorPath>
+        <module name="My_Application.annotion-process" />
+        <module name="My_Application.processsor" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.7">
+      <module name="My_Application.annotion-process" target="1.8" />
+      <module name="My_Application.app" target="1.8" />
+      <module name="My_Application.buniffer" target="1.8" />
+      <module name="My_Application.butter-annotation" target="1.8" />
+      <module name="My_Application.home_module" target="1.8" />
+      <module name="My_Application.home_module_api" target="1.8" />
+      <module name="My_Application.login_module" target="1.8" />
+      <module name="My_Application.login_module_api" target="1.8" />
+      <module name="My_Application.mygradle" target="1.8" />
+      <module name="My_Application.plugin" target="1.8" />
+      <module name="My_Application.processsor" target="1.8" />
+      <module name="My_Application.retrofit_module" target="1.8" />
+      <module name="My_Application.rxjava1_module" target="1.8" />
+      <module name="My_Application.sample_baseinterface" target="1.8" />
+      <module name="My_Application.serviceloader" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

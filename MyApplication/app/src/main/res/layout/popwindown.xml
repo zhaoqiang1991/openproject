@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b0000000" ><!-- 背景 半透明 -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/popup_window"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="battery vehicle error"
+            android:textColor="#4b4b4b"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_timeOccur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:text="battery vehicle error"
+            android:textColor="#676767"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_timeRecover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:text="battery vehicle error"
+            android:textColor="#676767"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_fault"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:text="battery vehicle error"
+            android:textColor="#676767"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="7dp"
+            android:background="#999999" />
+
+        <TextView
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="sfsdf"
+            android:textColor="#FF0000"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</RelativeLayout>

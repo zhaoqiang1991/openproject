@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="105dp"
+    android:layout_height="88dp"
+    android:background="@color/cardview_dark_background"
+    android:orientation="horizontal"
+    tools:context=".Main4Activity">
+
+    <TextView
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/b"
+        android:text="btn1"
+        android:background="#FF0000"
+        android:gravity="center_vertical"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/b"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:visibility="visible"
+        android:background="#9900FF"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toRightOf="@id/a"
+        app:layout_constraintRight_toLeftOf="@id/c"
+        android:text="btn2"
+        android:gravity="center_vertical"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/c"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:visibility="visible"
+        android:background="#99CC33"
+        android:layout_marginLeft="3dp"
+        android:gravity="center_vertical"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toRightOf="@id/b"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="btn3"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
