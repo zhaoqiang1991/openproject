@@ -1,10 +1,8 @@
-include ':app', ':butter-annotation',
-        ':annotion-process', ':buniffer',
-        ':mygradle', ':annotation',
+include ':app',
+          ':annotation',
         ':processsor', ':serviceloader',
         ':plugin', ':sample_baseinterface',
         ':login_module', ':home_module',
-        ':login_module_api', ':home_module_api',
-        'retrofit_module'
+        ':login_module_api', ':home_module_api'
+
 rootProject.name = 'My Application'
-include ':rxjava1_module'

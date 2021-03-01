@@ -52,9 +52,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation project(path: ':butter-annotation')
     annotationProcessor project(path: ':annotion-process')
-    implementation project(path: ':buniffer')
-    implementation project(path: ':annotation')
-    //注解解释器的依赖必须是这样子写，不然有问题
+
     annotationProcessor project(path: ':processsor')
     implementation project(path: ':serviceloader')
     implementation project(path: ':sample_baseinterface')
